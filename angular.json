@@ -5,7 +5,9 @@
   "projects": {
     "app-todo": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {"@schematics/angular:component": {
+        "styleext": "scss"       
+  }  },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -25,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -94,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "02885eb1-c133-4c40-98e0-42a9b5144927"
   }
 }
